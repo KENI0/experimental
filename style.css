@@ -1,0 +1,18 @@
+h1 {
+  border-bottom: 1px gray solid;
+  margin-bottom:0;
+
+}
+
+
+div {
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+#Boss{
+  color:coral;
+  border: 1px gray solid;
+  padding: 10px;
+  grid-gap: 5px;
+}
