@@ -5,7 +5,15 @@
     <title></title>
   </head>
   <body>
-    <input type="button" value="hi" onclick="alert('hi there!')">
-    <input type="text" onchange="alert( 'watch out!')" >
+    <h1 style="text-align: center;">야간모드 Test</h1>
+    <input type="button"value="야간" onclick="
+    document.querySelector('body').style.backgroundColor ='black';
+    document.querySelector('body').style.color='white';"
+    >
+    <input type="button"value="주간" onclick="
+    document.querySelector('body').style.backgroundColor ='white';
+    document.querySelector('body').style.color='black';"
+    >
+    <p>야간모드 설정을 위한 테스트작 입니다.</p>
   </body>
 </html>
