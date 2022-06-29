@@ -5,28 +5,27 @@
     <title></title>
   </head>
   <body>
-    <h1>Comparison operators & Boolean</h1>
-      <h2>1===1</h2>
-      <script>
-        document.write(1===1);
-      </script>
-      <h2>1===2</h2>
-      <script>
-        document.write(1===2);
-      </script>
-      <h2>1&lt;2</h2>
-      <script>
-        document.write(1<2);
-      </script>
-      <h2>1&gt;2</h2>
-      <script>
-        /*
-        html charatcer entities
-        &gt: > greater than
-        &lt: < less than
-        */
-        document.write(1>2);
-      </script>
+    <h1>color mode</h1>
+    <input type="button" value="coral" onclick="
+    document.querySelector('body').style.backgroundColor='coral';
+    document.querySelector('body').style.color='lightgray';">
+    <input type="button" value="gray" onclick="
+    document.querySelector('body').style.backgroundColor='lightgray';
+    document.querySelector('body').style.color='magenta';">
+
+    <input id="toggle" type="button" value="coral" onclick="
+    if(document.querySelector('#toggle').value === 'coral'){
+      document.querySelector('body').style.backgroundColor='coral';
+      document.querySelector('body').style.color='lightgray';
+      document.querySelector('#toggle').value='gray';
+      }
+      else {
+        document.querySelector('body').style.backgroundColor='lightgray';
+        document.querySelector('body').style.color='magenta';
+        document.querySelector('#toggle').value ='coral';
+      }
+      ">
+    <p>enable a dark mode!</p>
 
   </body>
 </html>
