@@ -7,22 +7,25 @@
   <body>
     <h1>color mode</h1>
     <input type="button" value="coral" onclick="
-    document.querySelector('body').style.backgroundColor='coral';
-    document.querySelector('body').style.color='lightgray';">
+    var target2 =document.querySelector('body');
+    target2.style.backgroundColor='coral';
+    target2.style.color='lightgray';">
     <input type="button" value="gray" onclick="
-    document.querySelector('body').style.backgroundColor='lightgray';
-    document.querySelector('body').style.color='magenta';">
+    var target2 =document.querySelector('body');
+    target2.style.backgroundColor='lightgray';
+    target2.style.color='magenta';">
 
     <input id="toggle" type="button" value="coral" onclick="
-    if(document.querySelector('#toggle').value === 'coral'){
-      document.querySelector('body').style.backgroundColor='coral';
-      document.querySelector('body').style.color='lightgray';
+    var target=document.querySelector('body');
+    if(this.value === 'coral'){
+      target.style.backgroundColor='coral';
+      target.style.color='lightgray';
       document.querySelector('#toggle').value='gray';
       }
       else {
-        document.querySelector('body').style.backgroundColor='lightgray';
-        document.querySelector('body').style.color='magenta';
-        document.querySelector('#toggle').value ='coral';
+        target.style.backgroundColor='lightgray';
+        target.style.color='magenta';
+        document.querySelector('#toggle').value = 'coral';
       }
       ">
     <p>enable a dark mode!</p>
