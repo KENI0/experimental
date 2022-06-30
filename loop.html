@@ -10,16 +10,21 @@
       var fruits = ['banana','apple','grapes','pineapple','watermelon'];
     </script>
     <h2>name about fruits</h2>
-      <ul>
-        <script>
+      <script>
+        document.write(fruits.join('-'));
+      </script>
+
+    <ul>
+     <script>
           var i = 0;
             while(i<fruits.length){
               document.write('<li>'+ fruits[i]+'</li>');
               i = i + 1 ;
               // 배열을 넣거나 변수 지정, 변수에다 값을 넣을 때는 따옴표 안쓰는듯.
             }
+
+
         </script>
       </ul>
-
   </body>
 </html>
