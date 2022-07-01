@@ -1,0 +1,67 @@
+<!doctype html>
+  <html>
+    <head>
+      <title> Coder's Hub </title>
+      <meta charset = "utf-8">
+  <link rel="stylesheet" href="style.css">
+        <script>
+          function buttonclick(self){
+            var target= document.querySelector('body');
+                if(self.value === 'coral'){
+                  target.style.backgroundColor='coral';
+                  target.style.color='black';
+                  self.value = 'lightgray';
+
+                      var loop = document.querySelectorAll('a');
+                      var  i = 0;
+                        while(i < loop.length){
+                        loop[i].style.color ='powderblue';
+                        i = i + 1;
+                    }
+                }
+                else {
+                  target.style.backgroundColor='lightgray';
+                  target.style.color='PaleVioletRed';
+                  self.value = 'coral';
+
+                    var loop = document.querySelectorAll('a');
+                    var  i = 0;
+                      while(i < loop.length){
+                      loop[i].style.color ='PaleVioletRed';
+                      i = i + 1;
+                }
+              }
+          }
+  </script>
+    </head>
+        <body>
+            <h1> <a href= index.html>
+              Coder's Hub</a>
+              <input class="toggle" type="button" value="coral" onclick="
+              buttonclick(this);
+              ">
+                  <input id="Reset" type="button" value="Reset" onclick="
+                    var target= document.querySelector('body');
+                    var atag = document.querySelectorAll('a');
+                      target.style.color='black';
+                      target.style.backgroundColor='white';
+
+                      var  i = 0;
+                        while(i < atag.length){
+                        atag[i].style.color ='black';
+                        i = i + 1;
+                      }
+                  ">
+                </h1>
+        <div id="grid">
+             <ol>
+              <li><a href = "frontend.html"><strong> Frontend </strong></li></a>
+              <li> <a href = "backend.html"><strong>Backend</strong> </li></a>
+              <li> <a href = "data engineer.html "><strong>data engineer</strong></li></a>
+             </ol>
+        <div>
+             <img src = "data engineer roadmap.jpg" width = "100%">
+        </div>
+      </div>
+        </body>
+        </html>
