@@ -1,68 +1,35 @@
-<!doctype html>
-  <html>
-    <head>
-      <title> Coder's Hub </title>
-      <meta charset = "utf-8">
-      <link rel="stylesheet" href="style.css">
-      <script>
-        function buttonclick(self){
-          var target= document.querySelector('body');
-              if(self.value === 'coral'){
-                target.style.backgroundColor='coral';
-                target.style.color='black';
-                self.value = 'lightgray';
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="price.css">
+  </head>
+  <body>
+    <h1> <img src='frontimage.jpg' width= '50px';> What about the price?</h1>
+    <div class="grid-container">
+      <div class ="img1" >  <img src="redcup.jpg"; width="200px";> </div>
+      <div class ="img2" >  <img src="yellowcup.jpg"; width="200px";> </div>
+      <div class ="img3" >  <img src="bluecup.jpg"; width="200px";> </div>
 
-                    var loop = document.querySelectorAll('a');
-                    var  i = 0;
-                      while(i < loop.length){
-                      loop[i].style.color ='powderblue';
-                      i = i + 1;
-                  }
-              }
-              else {
-                target.style.backgroundColor='lightgray';
-                target.style.color='PaleVioletRed';
-                self.value = 'coral';
-
-                  var loop = document.querySelectorAll('a');
-                  var  i = 0;
-                    while(i < loop.length){
-                    loop[i].style.color ='PaleVioletRed';
-                    i = i + 1;
-              }
-            }
-        }
-      </script>
-    </head>
-        <body>
-            <h1> <a href= index.html >
-            Coder's Hub</a>
-            <input class="toggle" type="button" value="coral" onclick="
-            buttonclick(this)">
-
-                <input id="Reset" type="button" value="Reset" onclick="
-                  var target= document.querySelector('body');
-                  var atag = document.querySelectorAll('a');
-                    target.style.color='black';
-                    target.style.backgroundColor='white';
-
-                    var  i = 0;
-                      while(i < atag.length){
-                      atag[i].style.color ='black';
-                      i = i + 1;
-                    }
-                ">
-              </h1>
-          <div id="grid">
-             <ol>
-              <li><a href = "frontend.html"><strong> Frontend </strong></li></a>
-              <li> <a href = "backend.html"><strong>Backend</strong> </li></a>
-              <li> <a href = "data engineer.html"><strong>data engineer</strong></li></a>
-             </ol>
-          <div>
-            <h2> 설명을 위한 글<h2>
-              <p>각종 it직종 소개서입니다.</p>
-          </div>
-        </div>
-        </body>
-        </html>
+     <div class= "exp1">
+        <p>price: <br>
+          color: <br>
+          made: <br>
+        </p>
+   </div>
+   <div class= "exp2">
+      <p>price: <br>
+        color: <br>
+        made: <br>
+      </p>
+ </div>
+ <div class= "exp3">
+    <p>price: <br>
+      color: <br>
+      made: <br>
+    </p>
+</div>
+</div>
+  </body>
+</html>

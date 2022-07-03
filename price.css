@@ -1,0 +1,22 @@
+h1{
+  color:PaleVioletRed;
+  border-bottom: solid 1px black;
+  padding-bottom: 10px;
+}
+body{
+  background-color: lightgray;
+}
+
+.grid-container{
+  display:grid;
+  grid-template-areas:
+  "A B"
+  "C D"
+  "E F";
+}
+.img1 { grid-area: A;}
+.img2 { grid-area: C;}
+.img3 { grid-area: E;}
+.exp1 { grid-area: B;}
+.exp2 { grid-area: D;}
+.exp3 { grid-area: F;}
