@@ -13,6 +13,15 @@ body{
   "A B"
   "C D"
   "E F";
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(117, 190, 218, 0.5););
+  text-align:left;
+  padding: 20px 0;
+  font-size: 30px;
 }
 .img1 { grid-area: A;}
 .img2 { grid-area: C;}
