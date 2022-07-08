@@ -1,4 +1,16 @@
 
-div{
+span{
 color:magenta;
+border: 1px gray solid;
+}
+
+table{
+  border: 1px powderblue solid;
+  font-size: 50px;
+}
+
+td{
+  margin:20px;
+  padding:20px;
+  border:1px gray solid;
 }
