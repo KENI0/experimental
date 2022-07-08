@@ -1,16 +1,16 @@
-
-span{
-color:magenta;
-border: 1px gray solid;
+div{
+  width:  200px;
+  height: 200px;
+  background-color: blueviolet;
+  transition: 0.5s;
 }
 
-table{
-  border: 1px powderblue solid;
-  font-size: 50px;
+.box:hover{
+  width: 400px;
+  height: 400px;
+  background-color:gray;
 }
 
-td{
-  margin:20px;
-  padding:20px;
-  border:1px gray solid;
+input:focus{
+  background-color: orange;
 }
