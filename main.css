@@ -1,20 +1,17 @@
-body{
-  padding:100px;
+.container {
+  width: 700px;
+  height: 500px;
+  background-color: powderblue;
+  position: relative;
 }
-.container{
-  width: 200px;
-  height: 200px;
+
+.container .box {
+  width: 100px;
+  height: 100px;
   background-color: orange;
-  perspective: 500px;
-}
-.container .content{
-  display: flex;
-  width: 200px;
-  height: 200px;
-  font-size:50px;
-  justify-content: center;
-  align-items: center;
-  background-color: gray;
-  transform: rotateX(80deg);
-  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  
 }
