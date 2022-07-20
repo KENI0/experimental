@@ -1,16 +1,27 @@
-const searchEl = document.querySelector('.search');
-const iconEl = searchEl.querySelector('input');
+const searchEl = document.querySelector(".search");
+const inputEl = searchEl.querySelector("input");
 
 searchEl.addEventListener('click', function() {
-  iconEl.focus()
+  inputEl.focus();
 })
 
-iconEl.addEventListener('focus', function() {
+inputEl.addEventListener('focus', function() {
   searchEl.classList.add('focused');
-  iconEl.setAttribute('placeholder','통합검색');
+  inputEl.setAttribute('placeholder','통합검색');
 })
 
-iconEl.addEventListener('blur', function() {
+inputEl.addEventListener('blur', function(){
   searchEl.classList.remove('focused');
-  iconEl.setAttribute('placeholder','')
+  inputEl.setAttribute('placeholder','');
 })
+
+const badgeEl = document.querySelector('header .badges');
+
+window.addEventListener('scroll',_.throttle(function(){
+  if(window.scrollY > 500){
+    gsap.to(".badges",{duration:.4 , opacity:0, display:'block'})
+  }
+  else {
+    gsap.to(".badges",{duration:.4 , opacity:1 ,display:'none'})
+  }
+},300))
