@@ -1,8 +1,54 @@
+body {
+  height: 10000px;
+}
+
+/* HEADER */
+.box-tag {
+  border-bottom: 1px solid gray;
+  height: 200px;
+  position: relative;
+}
+
+.box-tag .inner {
+  background-color: aqua;
+  height: 200px;
+  width: 2000px;
+  margin: 0 auto;
+}
+
+.box-tag .box-img {
+  position: fixed;
+  right: 0;
+  top: 300px;
+  
+}
+
+.box-tag .box-img .box-blue{
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.box-tag .box-img .box-red{
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+
+
+
 .container {
   background-color: gray;
   width: 500px;
   height: 500px;
   position: relative;
+}
+
+.container .inner {
 
 }
 
