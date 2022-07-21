@@ -1,12 +1,8 @@
-const boxEls = document.querySelectorAll('.box');
-boxEls.forEach(function(boxEl){
-    boxEl.classList.add('New');
+const fadeEls = document.querySelectorAll('.container .fade-in')
+
+fadeEls.forEach(function(fadeEl,index) {
+gsap.to(fadeEl, .5 ,{
+  delay: (index + 1) * .7 , 
+  opacity: 1,
 })
-//-------------------------------------------------------------//
-
-const boxEl = document.querySelector('.box');
-boxEl.classList.add('active');
-let isContains = boxEl.classList.contains('active');
-console.log(isContains);
-
-
+})
