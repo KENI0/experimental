@@ -17,11 +17,19 @@ inputEl.addEventListener('blur', function(){
 
 const badgeEl = document.querySelector('header .badges');
 
-window.addEventListener('scroll',_.throttle(function(){
+window.addEventListener('scroll',_.throttle(function () {
+  console.log(window.scrollY);
   if(window.scrollY > 500){
-    gsap.to(".badges",{duration:.4 , opacity:0, display:'block'})
-  }
-  else {
-    gsap.to(".badges",{duration:.4 , opacity:1 ,display:'none'})
+    //배지 숨기기 
+    gsap.to(badgeEl, .6, {
+      opacity: 0,
+      display: 'none'
+    });
+  }else{
+    //배지 보이기 
+    gsap.to(badgeEl, .6, {
+      opacity: 1,
+      display: 'block'
+    });
   }
 },300))
