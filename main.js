@@ -1,7 +1,14 @@
-const upScroll = document.querySelector('.up-scroll')
-upScroll.addEventListener('click',function() {
-  gsap.to(window, {
-    duration: .5,
-    scrollTo: 0
-  })
-} )
+const hideEl = document.querySelector('.up-scroll')
+
+window.addEventListener('scroll',function(){
+  if(window.scrollY > 500){
+    gsap.to(hideEl, .1, {
+      opacity: 1
+    })
+  }
+  else {
+    gsap.to(hideEl ,.1, {
+     opacity: 0
+    })   
+  }
+})

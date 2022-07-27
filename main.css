@@ -1,5 +1,5 @@
 body {
-  height: 4000px;
+  height: 6000px;
 }
 
 
@@ -55,6 +55,8 @@ body {
   right: 50px;
   transition: .5s;
   cursor: pointer;
+  opacity: 0;
+  border-radius: 50%;
 }
 
 .up-scroll:hover {
