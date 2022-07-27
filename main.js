@@ -12,3 +12,10 @@ window.addEventListener('scroll',function(){
     })   
   }
 })
+
+const upScroll = document.querySelector('.up-scroll')
+upScroll.addEventListener('click',function() {
+  gsap.to(window,.4, {
+    scrollTo:0
+  })
+})
